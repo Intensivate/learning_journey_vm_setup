@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "This script will equip your system with the rocket-chip implementation dated March 2nd, 2018"
-echo "Please make sure:"
-echo " 1. you've created a Virtual Machine as advised over at Learning Journey pages"
-echo " 2. you've run setup_general.sh before running this script."
-echo "For details, kindly take a look at README.md"
-echo " "
+# This script will equip your system with the rocket-chip implementation dated March 2nd, 2018
+# Please make sure:
+#  1. you've created a Virtual Machine as advised over at Learning Journey pages
+#  2. you've run setup_general.sh before running this script.
+# For details, kindly take a look at README.md
+# 
 
 export PROJ_NAME=F
 # If $PROJ_NAME is NOT defined in .bashrc, you may define it as "export PROJ_NAME=F"
@@ -29,13 +29,9 @@ if [ ! -d "$LJRC" ]; then
   ##########################################################
   # Prepare the .gitconfig file - important for qemu
   ##########################################################
-  cd 
-  sed -i "\$a [url \"https://github.com/qemu/\"]" .gitconfig
-  sed -i "\$a insteadOf = git://git.qemu-project.org/" .gitconfig
-  sed -i "\$a [url \"git://cgit.freedesktop.org/pixman/\"]" .gitconfig
-  sed -i "\$a insteadOf = https://anongit.freedesktop.org/pixman/" .gitconfig
-  sed -i "\$a [url \"git://cgit.freedesktop.org/pixman/\"]" .gitconfig
-  sed -i "\$a insteadOf = git://anongit.freedesktop.org/pixman'" .gitconfig
+  git config --global url.https://github.com/qemu.insteadof git://git.qemu-project.org
+  git config --global url.git://cgit.freedesktop.org/pixman.insteadof https://anongit.freedesktop.org/pixman 
+  git config --global --add url.git://cgit.freedesktop.org/pixman.insteadof git://anongit.freedesktop.org/pixman 
   ##########################################################
   # Clone and get the repository.
   ##########################################################
@@ -98,8 +94,11 @@ if [ ! -d "$LJRC" ]; then
   cd ${LJRC}
 
 else
-  cd ${LJRC}
-  git pull
-  git pull --recurse-submodules
-  git pull
+  #cd ${LJRC}
+  #git pull
+  #git pull --recurse-submodules
+  #git pull
+  echo "Deleting everything, please re-run this very script once this run is finished"
+  cd
+  rm -rf ${LJRC}
 fi
