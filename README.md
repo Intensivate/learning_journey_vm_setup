@@ -11,7 +11,7 @@ Please run the scripts in the following order:
 1. `source setup_general.sh`
 1. `source setup_L2_cache.sh`
 
-### An Issue to pay attention to and how to solve it
+### An issue to pay attention to and how to solve it
 
 Towards the end of its operation, the script `setup_L2_cache.sh` might report the following error:
 
@@ -20,7 +20,7 @@ Makefrag-verilator:71: recipe for target 'emulator-freechips.rocketchip.system-D
 make: *** [emulator-freechips.rocketchip.system-DefaultConfig] Error 2
 ```
 
-If such an even occures, please `cd learning_journey_rocket_chip` and paste the following into bash:
+If such an event occures, please `cd learning_journey_rocket_chip` and paste the following into bash:
 
 ```
 unset VERILATOR_ROOT
@@ -39,7 +39,7 @@ These lines are part of `set_env.sh`, but for some reason, still unknown they do
 
 There should be no errors anymore. If any do appear, please double check whether you successfully set the virtual machine settings and correctly installed Mint 18. If yes, please also take a moment to confirm that the first script, `setup_general.sh` run successfully. If strange behavior is met during execution of either of these steps - please use the [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page to describe your situation and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
 
-### Resources
+## Resources
 
 For more details please visit [Chisel Learning Journey](https://github.com/librecores/riscv-sodor/wiki) and post any questions in [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page.
 
