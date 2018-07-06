@@ -98,11 +98,15 @@ if [ ! -d "$LJRC" ]; then
   cd ${LJRC}
 
 else
-  #cd ${LJRC}
-  #git pull
-  #git pull --recurse-submodules
-  #git pull
-  echo "Deleting everything, please re-run this very script once this run is finished"
-  cd
-  rm -rf ${LJRC}
+  echo "Re-running the script"
+  cd $LJRC/learning_journey_rocket_chip
+  git pull
+  git pull --recurse-submodules
+  git pull
+  cd riscv-tools
+  git submodule update --init --recursive
+  ./build.sh
+  rm -rf riscv-gnu-toolchain/build
+  cd $LJRC/learning_journey_rocket_chip
+  echo "Script re-run finished"
 fi
