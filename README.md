@@ -11,7 +11,7 @@ Please run the scripts in the following order:
 1. `source setup_general.sh`
 1. `source setup_L2_cache.sh`
 
-If you face any other issue than what's described below, please make sure you've run the first script with appropriate privileges and that your VM has been correctly set-up. If the error persists, please post it and explain at [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page.
+If you face any other issue than what's described below, please make sure you've run the first script with appropriate privileges and that your VM has been correctly set-up. If the error persists, please post it and explain at [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
 
 ### An issue to pay attention to and how to solve it
 
@@ -33,7 +33,7 @@ export PATH=$RISCV/bin:$RISCV/../emulator/verilator/install/bin:$PATH
 export VERILATOR_ROOT=$RISCV/../emulator/verilator/install/
 ```
 
-These lines are part of `set_env.sh`, but for some reason, still unknown, they don't execute in the expected manner. Once these are pasted in this way, the error will go away - please re-run the second script from the `learning_journey_vm_setup` directory.
+These lines are part of `set_env.sh`, but for some reason, still unknown, they don't execute in the expected manner. Once these are pasted in this way, the error will go away - please **re-run the second script** from the `learning_journey_vm_setup` directory.
 
 There should be no errors anymore. If any do appear, please double check whether you successfully set the virtual machine settings and correctly installed Mint 18. If yes, please also take a moment to confirm that the first script, `setup_general.sh` run successfully. If strange behavior is met during execution of either of these steps - please use the [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page to describe your situation and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
 
