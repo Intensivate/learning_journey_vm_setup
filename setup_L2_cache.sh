@@ -27,11 +27,13 @@ fi
 ##########################################################
 if [ ! -d "$LJRC" ]; then
   ##########################################################
-  # Prepare the .gitconfig file - important for qemu
+  # Prepare the .gitconfig file - important for qemu and jimtcl
   ##########################################################
   git config --global url.https://github.com/qemu.insteadof git://git.qemu-project.org
   git config --global url.git://cgit.freedesktop.org/pixman.insteadof https://anongit.freedesktop.org/pixman 
   git config --global --add url.git://cgit.freedesktop.org/pixman.insteadof git://anongit.freedesktop.org/pixman 
+  git config --global url.https://github.com/msteveb/jimtcl.git.insteadof http://repo.or.cz/r/jimtcl.git
+
   ##########################################################
   # Clone and get the repository.
   ##########################################################
