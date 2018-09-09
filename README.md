@@ -2,7 +2,7 @@
 
 ### Virtual Machine
 
-Before running the scripts, please first create a Virtual Machine as explained [here](https://github.com/librecores/riscv-sodor/wiki/Chisel-Environment).
+Before running the scripts, please first create a Virtual Machine as explained [here](https://github.com/Intensivate/learning-journey/wiki/Chisel-Environment).
 
 ### Running the scripts
 
@@ -17,7 +17,7 @@ Once your home directory is clean, please run the scripts in the following order
 1. `source setup_general.sh`
 1. `source setup_L2_cache.sh`
 
-If you face any other issue (than the one described below), please make sure you've run the first script with appropriate privileges and that your VM has been correctly set-up. If the error persists, please post it and explain at [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
+If you face any other issue (than the one described below), please make sure you've run the first script with appropriate privileges and that your VM has been correctly set-up. If the error persists, please post it and explain at [User Experiences](https://github.com/Intensivate/learning-journey/wiki/User-Experiences) page and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
 
 ### An issue to pay attention to and how to solve it
 
@@ -41,7 +41,7 @@ export VERILATOR_ROOT=$RISCV/../emulator/verilator/install/
 
 These lines are part of `set_env.sh`, but for some reason, still unknown, they don't execute in the expected manner (if you see a reason and have a solution, **please do offer** - we gladly consider and accept pull requests). Once these are pasted in this way, the error will go away - please **re-run the second script** from the `learning_journey_vm_setup` directory (**don't delete** the `~/learning-journey` directory!).
 
-There should be no errors anymore. If any do appear, please double check whether you successfully set the virtual machine settings and correctly installed Mint 18. If yes, please also take a moment to confirm that the first script, `setup_general.sh` run successfully. If strange behavior is met during execution of either of these steps - please use the [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page to describe your situation and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
+There should be no errors anymore. If any do appear, please double check whether you successfully set the virtual machine settings and correctly installed Mint 18. If yes, please also take a moment to confirm that the first script, `setup_general.sh` run successfully. If strange behavior is met during execution of either of these steps - please use the [User Experiences](https://github.com/Intensivate/learning-journey/wiki/User-Experiences) page to describe your situation and then inform us by writing to `aleksandar [dot] pajkanovic (at) g m a i l`.
 
 ### Building the project
 
@@ -75,9 +75,9 @@ make -j1 run-asm-tests-debug
 make -j1 run-bmark-tests-debug
 ```
 
-Once the scripts finish successfully, please do go through these (no need for waveforms in the first run) and confirm that everything works well. Again, if any issues are met, please do post them at [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page.
+Once the scripts finish successfully, please do go through these (no need for waveforms in the first run) and confirm that everything works well. Again, if any issues are met, please do post them at [User Experiences](https://github.com/Intensivate/learning-journey/wiki/User-Experiences) page.
 
 ## Resources
 
-For more details please visit [Chisel Learning Journey](https://github.com/librecores/riscv-sodor/wiki) and post any questions in [User Experiences](https://github.com/librecores/riscv-sodor/wiki/User-Experiences) page.
+For more details please visit [Chisel Learning Journey](https://github.com/Intensivate/learning-journey/wiki) and post any questions in [User Experiences](https://github.com/Intensivate/learning-journey/wiki/User-Experiences) page.
 
