@@ -3,7 +3,7 @@
 #This script installs the environment required for all Intensivate projects.
 #It is generally the first thing run after creating a new VM, according to the Intensivate standard
 #For directions on setting up the standard Intensivate VM, see the wiki:
-#https://github.com/librecores/riscv-sodor/wiki/Chisel-Environment
+#https://github.com/Intensivate/learning-journey/wiki/Chisel-Environment
 
 ##########################################################
 # Install the needed packages.
